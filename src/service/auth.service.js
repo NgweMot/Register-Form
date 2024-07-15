@@ -5,6 +5,6 @@ export const Register = async (data) => {
     const res = await api.post("/register", data);
     return res;
   } catch (e) {
-    throw new Error(e.message);
+    console.error(e.message);
   }
 };
