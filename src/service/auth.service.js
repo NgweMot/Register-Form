@@ -5,6 +5,15 @@ export const Register = async (data) => {
     const res = await api.post("/register", data);
     return res;
   } catch (e) {
-    console.error(e.message);
+    console.log(e);
+  }
+};
+
+export const Login = async (data) => {
+  try {
+    const res = await api.post("/login", data);
+    return res;
+  } catch (e) {
+    console.log(e);
   }
 };
